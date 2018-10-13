@@ -10,6 +10,7 @@ int main() {
     double Wy;
     double Wx;
     double W;
+    double x, y;
 
     printf("program rozwiązuje układ dwóch równań liniowych.\n");
     printf("Podaj współczynniki.\n");
@@ -45,6 +46,28 @@ int main() {
     printf("wyznacznik W = %lf", W);
     printf("wyznacznik Wx = %lf", Wx);
     printf("wyznacznik Wy = %lf", Wy);
+
+
+    if(W !=0){
+        x = Wx / W;
+        y = Wy / W;
+        printf("rozwiązanie:\n");
+        printf("x = %5.2lf, y = %5.2lf", x y);
+        printf("\n");
+    } else{
+        if(Wx !=0 || Wy != 0){
+            printf("układ równań sprzeczny - nie ma rozwiązania.");
+            else{
+                printf("układ równań nieoznaczony - nieskończenie wielerozwiązań.");
+            }
+        }
+    }
+
+
+
+
+
+
 
 
     return 0;
